@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-image: url("images/BackgroundImage.png");
+  background-position: center;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.logo {
+  font-size: 2em;
+  margin-left: 3em;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+  margin: 1em;
+}
+
+nav {
+  margin-right: 3em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.name {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.role {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.buttongroup {
+  margin-top: 3em;
+}
+
+.actionbutton {
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px black;
+  border-style: none;
+}
+
+/* -----About Me Section Styles----- */
+#aboutme {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #454545;
+}
+
+.whatido {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutmeimage {
+  width: 50%;
+  text-align: center;
+}
+.aboutmetext {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats {
+  margin: 1em 0 1em 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.years {
+  margin-right: 3em;
+}
+
+.statsnumber {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+#cvbutton {
+  padding: 1em;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px #1e1e1e;
+  border-style: none;
+  background-color: black;
+  color: white;
+}
+
+/* -----Portfolio Section Style----- */
+
+#portfolio {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mywork {
+  margin: 5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.myworkimage {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.myworkdescription {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#worktitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#workdescription {
+  margin-bottom: 1em;
+}
+#demobutton {
+  padding: 1em 2em;
+  border-radius: 7px;
+  /* box-shadow: 5px 5px 5px #1e1e1e; */
+  border-style: none;
+}
+/* -----Skills Section Styling----- */
+
+#skills {
+  height: 100vh;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* -----Contact Me Section Styling----- */
+
+#contactme {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -----Footer Section Styling----- */
+footer {
+  background-color: black;
+  color: white;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin-left: 3em;
+}
+
+.socialicons {
+  margin-right: 3em;
+}
+.fas,
+.fab {
+  color: white;
+  margin: 0 0.5em 0 0.5em;
+  font-size: 1.5rem;
+}
