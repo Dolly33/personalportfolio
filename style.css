@@ -19,19 +19,24 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  padding-top: 2em;
+  padding-top: 1.5em;
+  /* overflow: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%; */
 }
 
 .logo {
   font-size: 2em;
 }
 
-ul {
+.menuul {
   display: flex;
   flex-direction: row;
 }
 
-li {
+.menuli {
   list-style-type: none;
   margin: 1em;
 }
@@ -188,6 +193,11 @@ nav {
   margin-bottom: 1.2em;
 }
 
+.work {
+  margin-left: 10em;
+  margin-right: 3em;
+}
+
 #workdescription {
   margin-bottom: 2em;
 }
@@ -206,10 +216,47 @@ nav {
 
 #skills {
   height: 100vh;
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillsNcerts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding: 3em 0;
+}
+
+.skills1 {
+  margin-left: 3em;
+}
+
+.certs {
+  margin-right: 3em;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  margin-bottom: 1em;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.75rem rgba(45, 56, 68, 0.15),
+    0 0.1rem 0.25rem rgba(109, 141, 173, 0.05);
+  font-weight: 300;
+  line-height: 1.4;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  width: 20vw;
 }
 
 /* -----Contact Me Section Styling----- */
@@ -221,9 +268,15 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 #form {
   display: flex;
   flex-direction: column;
+}
+
+#namenemail {
+  display: flex;
+  flex-direction: row;
 }
 
 /* -----Footer Section Styling----- */
