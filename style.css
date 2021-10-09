@@ -7,6 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 header {
@@ -19,9 +20,9 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  padding-top: 1.5em;
+  padding-top: 1.2em;
   /* overflow: hidden;
-  background-color: transparent;
+  background-color: #141819;
   position: fixed;
   top: 0;
   width: 100%; */
@@ -83,14 +84,34 @@ nav {
   margin-top: 3em;
 }
 
-.actionbutton {
+.workbutton {
   margin: 0.5em;
   padding: 1em;
   border-radius: 7px;
-  box-shadow: 5px 5px 5px black;
+  color: white;
+  background-color: black;
+  /* box-shadow: 5px 5px 5px #242424; */
   border-style: none;
+  cursor: pointer;
 }
 
+.workbutton:hover {
+  background-color: darkgray;
+  color: white;
+}
+.contactbutton {
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 7px;
+  /* box-shadow: 5px 5px 5px black; */
+  border-style: none;
+  cursor: pointer;
+}
+
+.contactbutton:hover {
+  background-color: darkgray;
+  color: white;
+}
 /* -----About Me Section Styles----- */
 #aboutme {
   height: 100vh;
@@ -107,7 +128,7 @@ nav {
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: #454545;
 }
@@ -149,16 +170,21 @@ nav {
 #cvbutton {
   padding: 1em;
   border-radius: 7px;
-  box-shadow: 5px 5px 10px #1e1e1e;
+  /* box-shadow: 5px 5px 10px #1e1e1e; */
   border-style: none;
-  background-color: black;
+  background-color: #141819;
   color: white;
+  cursor: pointer;
 }
 
+#cvbutton:hover {
+  background-color: darkgray;
+  color: white;
+}
 /* -----Portfolio Section Style----- */
 
 #portfolio {
-  background-color: black;
+  background-color: #141819;
   color: white;
   height: 100vh;
   display: flex;
@@ -207,6 +233,12 @@ nav {
   border-radius: 7px;
   /* box-shadow: 5px 5px 5px #1e1e1e; */
   border-style: none;
+  cursor: pointer;
+}
+
+#demobutton:hover {
+  background-color: darkgray;
+  color: white;
 }
 .navigate {
   font-size: 2em;
@@ -250,8 +282,9 @@ h3 {
   margin: 10px 0;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0.3rem 0.75rem rgba(45, 56, 68, 0.15),
-    0 0.1rem 0.25rem rgba(109, 141, 173, 0.05);
+  /* box-shadow: 0 0.3rem 0.75rem rgba(45, 56, 68, 0.15),
+    0 0.1rem 0.25rem rgba(109, 141, 173, 0.05); */
+  box-shadow: 2px 2px 4px rgba(45, 56, 68, 0.15);
   font-weight: 300;
   line-height: 1.4;
   background: rgba(255, 255, 255, 0.9);
@@ -270,6 +303,7 @@ h3 {
 }
 
 #form {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -277,11 +311,60 @@ h3 {
 #namenemail {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  width: 30vw;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  outline: none;
+  border-radius: 0.25rem;
+  /* border: 1px solid #ccc; */
+  border: none;
+  box-shadow: 0 2px 4px rgba(45, 56, 68, 0.15);
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  box-shadow: 0 2px 4px rgba(45, 56, 68, 0.5);
+  border: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 2rem;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 200px;
+  border-radius: 0.25rem;
+}
+
+input[type="submit"] {
+  background-color: #141819;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgray;
 }
 
 /* -----Footer Section Styling----- */
 footer {
-  background-color: black;
+  background-color: #141819;
   color: white;
   height: 15vh;
   display: flex;
